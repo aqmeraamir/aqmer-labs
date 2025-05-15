@@ -256,40 +256,36 @@ export const barChartOptionsWeeklyRevenue = {
   },
 };
 
-export const lineChartDataTotalSpent = [
+export const scatterChartData = [
   {
-    name: "Revenue",
-    data: [50, 64, 48, 66, 49, 68],
+    name: 'Data',
+    data: [[0,2],[1,4],[2,6],[3,8],[4,10],[5,12],[6,14]],
     color: "#4318FF",
   },
-  {
-    name: "Profit",
-    data: [30, 40, 24, 46, 20, 46],
-    color: "#6AD2FF",
-  },
+
 ];
 
-export const lineChartOptionsTotalSpent = {
-  legend: {
-    show: false,
-  },
+export const scatterChartOptions = {
+  
 
   theme: {
     mode: "light",
   },
   chart: {
-    type: "line",
+    type: "scatter",
+
+    zoom: {
+      enabled: false,
+    },
 
     toolbar: {
       show: false,
     },
+    
   },
 
   dataLabels: {
     enabled: false,
-  },
-  stroke: {
-    curve: "smooth",
   },
 
   tooltip: {
@@ -298,17 +294,24 @@ export const lineChartOptionsTotalSpent = {
       fontFamily: undefined,
       backgroundColor: "#000000"
     },
+  
+  
     theme: 'dark',
-    x: {
-      format: "dd/MM/yy HH:mm",
-    },
+
+    custom: function({series, seriesIndex, dataPointIndex, w}) {
+      return `<div class="arrow_box" style="padding: 5px;">
+        <span>${w.globals.labels[dataPointIndex]}, ${series[seriesIndex][dataPointIndex]}</span>
+      </div>`;
+    }
+    
   },
   grid: {
-    show: false,
+    show: true,
   },
+
   xaxis: {
     axisBorder: {
-      show: false,
+      show: true,
     },
     axisTicks: {
       show: false,
@@ -320,12 +323,37 @@ export const lineChartOptionsTotalSpent = {
         fontWeight: "500",
       },
     },
-    type: "text",
-    range: undefined,
-    categories: ["SEP", "OCT", "NOV", "DEC", "JAN", "FEB"],
+
+    tooltip: {
+      enabled: false,
+    },
+
+    min: 0,
+    max: 10,
+    stepSize: 1,
+    tickAmount: 10,
+    
   },
 
   yaxis: {
-    show: false,
+    axisBorder: {
+      show: true,
+    },
+
+    tooltip: {
+      enabled: true,
+    },
+
+    labels: {
+      style: {
+        colors: "#A3AED0",
+        fontSize: "12px",
+        fontWeight: "500",
+      },
+    },
+    min: 0,
+    max: 10,
+    stepSize: 1,
+    
   },
 };

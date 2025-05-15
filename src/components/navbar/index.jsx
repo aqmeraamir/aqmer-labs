@@ -10,12 +10,11 @@ import {
   IoMdNotificationsOutline,
   IoMdInformationCircleOutline,
 } from "react-icons/io";
-import avatar from "assets/img/avatars/avatar4.png";
+import avatar from "assets/img/avatars/profile.jpg";
 
 const Navbar = (props) => {
-  const { onOpenSidenav, brandText } = props;
+  const { onOpenSidenav, parent, child } = props;
   const [darkmode, setDarkmode] = React.useState(false);
-
   return (
     <nav className="sticky top-4 z-40 flex flex-row flex-wrap items-center justify-between rounded-xl bg-white/10 p-2 backdrop-blur-xl dark:bg-[#0b14374d]">
       <div className="ml-[6px]">
@@ -25,24 +24,41 @@ const Navbar = (props) => {
             href=" "
           >
             Pages
-            <span className="mx-1 text-sm text-navy-700 hover:text-navy-700 dark:text-white">
-              {" "}
-              /{" "}
-            </span>
           </a>
+
+          <span className="mx-1 text-sm text-navy-700 hover:text-navy-700 dark:text-white">
+            {" "}
+            /{" "}
+          </span>
+
           <Link
             className="text-sm font-normal capitalize text-navy-700 hover:underline dark:text-white dark:hover:text-white"
             to="#"
           >
-            {brandText}
+          {parent}
           </Link>
-        </div>
+
+          {child && (
+            <>
+              <span className="mx-1 text-sm text-navy-700 hover:text-navy-700 dark:text-white">
+                /
+              </span>
+              <Link
+                className="text-sm font-normal capitalize text-navy-700 hover:underline dark:text-white dark:hover:text-white"
+                to="#"
+              >
+                {child}
+              </Link>
+            </>
+          )}
+
+        </div>  
         <p className="shrink text-[33px] capitalize text-navy-700 dark:text-white">
           <Link
             to="#"
             className="font-bold capitalize hover:text-navy-700 dark:hover:text-white"
           >
-            {brandText}
+            {child || parent}
           </Link>
         </p>
       </div>
@@ -89,32 +105,20 @@ const Navbar = (props) => {
                 </div>
                 <div className="ml-2 flex h-full w-full flex-col justify-center rounded-lg px-1 text-sm">
                   <p className="mb-1 text-left text-base font-bold text-gray-900 dark:text-white">
-                    New Update: Horizon UI Dashboard PRO
+                    No data
                   </p>
                   <p className="font-base text-left text-xs text-gray-900 dark:text-white">
-                    A new update for your downloaded item is available!
+                    No data
                   </p>
                 </div>
               </button>
 
-              <button className="flex w-full items-center">
-                <div className="flex h-full w-[85px] items-center justify-center rounded-xl bg-gradient-to-b from-brandLinear to-brand-500 py-4 text-2xl text-white">
-                  <BsArrowBarUp />
-                </div>
-                <div className="ml-2 flex h-full w-full flex-col justify-center rounded-lg px-1 text-sm">
-                  <p className="mb-1 text-left text-base font-bold text-gray-900 dark:text-white">
-                    New Update: Horizon UI Dashboard PRO
-                  </p>
-                  <p className="font-base text-left text-xs text-gray-900 dark:text-white">
-                    A new update for your downloaded item is available!
-                  </p>
-                </div>
-              </button>
             </div>
           }
           classNames={"py-2 top-4 -left-[230px] md:-left-[440px] w-max"}
         />
-        {/* start Horizon PRO */}
+
+        {/* info button */}
         <Dropdown
           button={
             <p className="cursor-pointer">
@@ -136,21 +140,21 @@ const Navbar = (props) => {
                 href="https://horizon-ui.com/pro?ref=live-free-tailwind-react"
                 className="px-full linear flex cursor-pointer items-center justify-center rounded-xl bg-brand-500 py-[11px] font-bold text-white transition duration-200 hover:bg-brand-600 hover:text-white active:bg-brand-700 dark:bg-brand-400 dark:hover:bg-brand-300 dark:active:bg-brand-200"
               >
-                Buy Horizon UI PRO
+                No data
               </a>
               <a
                 target="blank"
                 href="https://horizon-ui.com/docs-tailwind/docs/react/installation?ref=live-free-tailwind-react"
                 className="px-full linear flex cursor-pointer items-center justify-center rounded-xl border py-[11px] font-bold text-navy-700 transition duration-200 hover:bg-gray-200 hover:text-navy-700 dark:!border-white/10 dark:text-white dark:hover:bg-white/20 dark:hover:text-white dark:active:bg-white/10"
               >
-                See Documentation
+                No data
               </a>
               <a
                 target="blank"
                 href="https://horizon-ui.com/?ref=live-free-tailwind-react"
                 className="hover:bg-black px-full linear flex cursor-pointer items-center justify-center rounded-xl py-[11px] font-bold text-navy-700 transition duration-200 hover:text-navy-700 dark:text-white dark:hover:text-white"
               >
-                Try Horizon Free
+                Try Button
               </a>
             </div>
           }
@@ -181,7 +185,7 @@ const Navbar = (props) => {
             <img
               className="h-10 w-10 rounded-full"
               src={avatar}
-              alt="Elon Musk"
+              alt="Profile"
             />
           }
           children={
@@ -189,7 +193,7 @@ const Navbar = (props) => {
               <div className="p-4">
                 <div className="flex items-center gap-2">
                   <p className="text-sm font-bold text-navy-700 dark:text-white">
-                    👋 Hey, Adela
+                    Hi
                   </p>{" "}
                 </div>
               </div>
@@ -206,7 +210,7 @@ const Navbar = (props) => {
                   href=" "
                   className="mt-3 text-sm text-gray-800 dark:text-white hover:dark:text-white"
                 >
-                  Newsletter Settings
+                  Other Settings
                 </a>
                 <a
                   href=" "
