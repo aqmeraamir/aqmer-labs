@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/aqmer-labs/static/css/main.85f67fd0.css",
+    "main.js": "/aqmer-labs/static/js/main.3bdeb16b.js",
+    "static/media/Banner1.png": "/aqmer-labs/static/media/Banner1.87062366f75bedd52bd2.png",
+    "static/media/Navbar.png": "/aqmer-labs/static/media/Navbar.f96a9f58c491b9acda99.png",
+    "static/media/coorelation.png": "/aqmer-labs/static/media/coorelation.f0dddd555f41c3b7b015.png",
+    "index.html": "/aqmer-labs/index.html",
+    "static/media/checked.svg": "/aqmer-labs/static/media/checked.6cb596af2bbf729dfac3.svg",
+    "main.85f67fd0.css.map": "/aqmer-labs/static/css/main.85f67fd0.css.map",
+    "main.3bdeb16b.js.map": "/aqmer-labs/static/js/main.3bdeb16b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85f67fd0.css",
+    "static/js/main.3bdeb16b.js"
+  ]
+}
