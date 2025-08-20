@@ -4,6 +4,7 @@ import React from "react";
 import Home from "views/home";
 import Coorelation from "views/coorelation/simulator";
 import Game from "views/coorelation/game";
+import Collision from "views/collision";
 
 
 // import
@@ -15,6 +16,10 @@ import {
   VscGraphScatter
 } from "react-icons/vsc"
 
+import { 
+  PiMeteorFill
+ } from "react-icons/pi";
+
 const routes = [
   {
     name: "Home",
@@ -24,6 +29,15 @@ const routes = [
     component: <Home />,
 
   },
+
+  {
+    name: "Collision Simulator",
+    layout: "/",
+    path: "collision-simulator",
+    icon: <PiMeteorFill className="h-6 w-6" />,
+    component: <Collision/>,
+  }, 
+
 
   {
   name: "Coorelation",
@@ -47,7 +61,9 @@ const routes = [
         component: <Game/>,
       },
     ],
-  },  
+  }, 
+  
+  
 
  
 ];

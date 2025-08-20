@@ -74,7 +74,6 @@ const GameChart = () => {
 
     const alphaChoice = alphaOptions[Math.floor(Math.random() * alphaOptions.length)];
     const h1Choice = h1Options[Math.floor(Math.random() * h1Options.length)];
-    const isTwoTailed = h1Choice === '≠ 0';
 
     setPoints(pts);
     setRValue(reg ? reg.r : 0);
@@ -85,9 +84,7 @@ const GameChart = () => {
     setHighlightCell({ n: randomN, col: alphaChoice.index });
 
 
-    const colIndex = isTwoTailed
-      ? 4 + alphaChoice.index   // two‐tail in columns 4–7
-      : alphaChoice.index;       // one‐tail in 0–3
+    
     setAlphaIndex(alphaChoice.index);
     setHighlightCell(null);
   };
