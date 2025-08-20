@@ -10,7 +10,7 @@ https://aqmer-labs.vercel.app
 
 ### Collisions physics simulator
 <div align="center">
-<img src="https://github.com/aqmeraamir/aqmer-labs/blob/main/images/Screen%20Recording%202025-08-20%20at%204.33.51%20PM%20(1).gif" alt="1" width=560 height=500></img>
+<img src="https://github.com/aqmeraamir/aqmer-labs/blob/main/images/Screen%20Recording%202025-08-20%20at%204.33.51%20PM%20(1).gif" alt="1" width=860 height=600></img>
 <br><i>Interactive, real-time 2D collisions, elastic/inelastic demos, can enable gravity/vectors/trails</i>
 </div>
 
@@ -54,6 +54,7 @@ https://aqmer-labs.vercel.app
 
 
   
+
 
 
 
