@@ -13,7 +13,9 @@ https://aqmer-labs.vercel.app
 <img src="https://github.com/aqmeraamir/cupcake-bot/assets/59936217/8ae3e239-eda6-4860-b1a7-2f5dfc304eda" alt="1" width=460 height=500></img>
 <br><i>Interactive, real-time 2D collisions, elastic/inelastic demos, can enable gravity/vectors/trails</i>
 </div>
-   
+
+---
+
 ### Correlation visualiser
 <div align="center">
 <img src="https://github.com/aqmeraamir/cupcake-bot/assets/59936217/8ae3e239-eda6-4860-b1a7-2f5dfc304eda" alt="1" width=460 height=500></img>
@@ -51,6 +53,7 @@ https://aqmer-labs.vercel.app
 
 
   
+
 
 
 
