@@ -24,7 +24,7 @@ const routes = [
   {
     name: "Home",
     layout: "/",
-    path: "home",
+    path: "aqmer-labs",
     icon: <MdHome className="h-6 w-6" />,
     component: <Home />,
 

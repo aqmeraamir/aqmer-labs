@@ -446,7 +446,6 @@ const CollisionSimulator = () => {
             <div>Particles: {simStats.count}</div>
             <div>Avg speed: {simStats.avgSpeed.toFixed(1)} px/s</div>
             <div>Collisions: {simStats.collisions}</div>
-            <div>FPS: {fpsRef.current.fps}</div>
           </div>
         </div>
       </div>

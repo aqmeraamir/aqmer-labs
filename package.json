@@ -2,6 +2,7 @@
   "name": "aqmer-labs",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://aqmeraamir.github.io/home",
   "dependencies": {
     "@chakra-ui/hooks": "^2.1.4",
     "@chakra-ui/modal": "^2.2.9",
@@ -43,7 +44,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "pretty": "prettier --write \"./**/*.{js,jsx,json}\""
+    "pretty": "prettier --write \"./**/*.{js,jsx,json}\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -65,6 +68,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.8",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.16",
     "prettier": "^2.8.3",
     "prettier-plugin-tailwindcss": "^0.2.1",
