@@ -1,16 +1,14 @@
 import React from "react";
 
 // Page Imports
-
 import Home from "views/home";
 import Coorelation from "views/coorelation/simulator";
 import Game from "views/coorelation/game";
 
 
-// Icon Imports
+// import
 import {
   MdHome,
-  MdSettings,
 } from "react-icons/md";
 
 import {
@@ -28,7 +26,6 @@ const routes = [
   },
 
   {
-
   name: "Coorelation",
   layout: "/",
   path: "coorelation",

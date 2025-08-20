@@ -4,15 +4,10 @@ import InteractiveScatterDiagram from "views/coorelation/simulator/components/In
 const Coorelation = () => {
   return (
     <div>
-     
-      {/* Charts */}
-  
+      {/* chart */}
       <div className="mt-5 grid grid-cols-1 min-h-[500px] max-w-[2500px]">
         <InteractiveScatterDiagram />
       </div>
-
-      
-   
     </div>
   );
 };

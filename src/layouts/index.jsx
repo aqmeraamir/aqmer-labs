@@ -12,45 +12,42 @@ export default function Admin(props) {
   const [currentParentRoute, setCurrentParentRoute] = React.useState("Home");
   const [currentChildRoute, setCurrentChildRoute] = React.useState("");
 
-  
-
   React.useEffect(() => {
     window.addEventListener("resize", () =>
       window.innerWidth < 1200 ? setOpen(false) : setOpen(true)
     );
   }, []);
 
+  const getActiveRoute = React.useCallback((routes, pathname = location.pathname) => {
+    let parentName = "Home";
+    let childName = "";
 
-const getActiveRoute = React.useCallback((routes, pathname = location.pathname) => {
-  let parentName = "Home";
-  let childName = "";
+    const findRoute = (routesList, parent = null) => {
+      for (let i = 0; i < routesList.length; i++) {
+        const route = routesList[i];
+        
+        const fullPath = `/${route.path}`.replace(/\/+/g, "/");
+        if (pathname.includes(fullPath)) {
+          if (route.children) {
+            const childMatch = findRoute(route.children, route.name);
+            if (childMatch) return childMatch;
+          }
 
-  const findRoute = (routesList, parent = null) => {
-    for (let i = 0; i < routesList.length; i++) {
-      const route = routesList[i];
-      
-      const fullPath = `/${route.path}`.replace(/\/+/g, "/");
-      if (pathname.includes(fullPath)) {
-        if (route.children) {
-          const childMatch = findRoute(route.children, route.name);
-          if (childMatch) return childMatch;
+          return { parent: parent || route.name, child: parent ? route.name : "" };
         }
-
-        return { parent: parent || route.name, child: parent ? route.name : "" };
       }
+      return null;
+    };
+
+    const match = findRoute(routes);
+    if (match) {
+      parentName = match.parent;
+      childName = match.child;
     }
-    return null;
-  };
 
-  const match = findRoute(routes);
-  if (match) {
-    parentName = match.parent;
-    childName = match.child;
-  }
-
-  setCurrentParentRoute(parentName);
-  setCurrentChildRoute(childName);
-}, [location.pathname]);
+    setCurrentParentRoute(parentName);
+    setCurrentChildRoute(childName);
+  }, [location.pathname]);
 
 
   React.useEffect(() => {
@@ -70,21 +67,21 @@ const getActiveRoute = React.useCallback((routes, pathname = location.pathname) 
     return activeNavbar;
   };
 
-const getRoutes = (routes, basePath = "") => {
-  return routes.flatMap((route, key) => {
-    const fullPath = `${basePath}/${route.path}`.replace(/\/+/g, "/");
+  const getRoutes = (routes, basePath = "") => {
+    return routes.flatMap((route, key) => {
+      const fullPath = `${basePath}/${route.path}`.replace(/\/+/g, "/");
 
-    const thisRoute = route.component ? (
-      <Route path={fullPath} element={route.component} key={fullPath} />
-    ) : null;
+      const thisRoute = route.component ? (
+        <Route path={fullPath} element={route.component} key={fullPath} />
+      ) : null;
 
-    const childRoutes = route.children
-      ? getRoutes(route.children, fullPath)
-      : [];
+      const childRoutes = route.children
+        ? getRoutes(route.children, fullPath)
+        : [];
 
-    return [thisRoute, ...childRoutes].filter(Boolean);
-  });
-};
+      return [thisRoute, ...childRoutes].filter(Boolean);
+    });
+  };
 
   document.documentElement.dir = "ltr";
   return (

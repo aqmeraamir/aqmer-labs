@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import { MdBarChart, MdPlayArrow } from 'react-icons/md';
 
@@ -23,8 +21,6 @@ const InteractiveScatterDiagram = () => {
   };
 
   const [sampleSize, setSampleSize] = useState(1);
-
-
 
   return (
     <>
