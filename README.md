@@ -7,9 +7,12 @@ https://aqmer-labs.vercel.app
 ---
 
 ## Features
-- Collisions physics simulator - interactive, real-time 2D collisions (elastic/inelastic demos, can enable gravity/vectors/trails).
-- Correlation visualiser - scatterplot + regression tools to explore correlation and relationships.
-- Small interactive game - radnomly generated hypothesis testing questions on product moment coorelation coefficient
+
+# Collisions physics simulator - interactive, real-time 2D collisions (elastic/inelastic demos, can enable gravity/vectors/trails).
+
+# Correlation visualiser - scatterplot + regression tools to explore correlation and relationships.
+
+# Small interactive game - radnomly generated hypothesis testing questions on product moment coorelation coefficient
 
 ## Setup (to run locally)
 
@@ -32,3 +35,4 @@ https://aqmer-labs.vercel.app
 
 
   
+
