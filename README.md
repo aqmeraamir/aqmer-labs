@@ -9,19 +9,20 @@ https://aqmer-labs.vercel.app
 ## Features
 
 ### Collisions physics simulator
-Interactive, real-time 2D collisions, elastic/inelastic demos, can enable gravity/vectors/trails
 <div align="center">
 <img src="https://github.com/aqmeraamir/cupcake-bot/assets/59936217/8ae3e239-eda6-4860-b1a7-2f5dfc304eda" alt="1" width=460 height=500></img>
-
+<br><i>Interactive, real-time 2D collisions, elastic/inelastic demos, can enable gravity/vectors/trails</i>
+   
 ### Correlation visualiser
-Interactive scatterplot + regression tools to explore correlation and relationships.
+
 <div align="center">
 <img src="https://github.com/aqmeraamir/cupcake-bot/assets/59936217/8ae3e239-eda6-4860-b1a7-2f5dfc304eda" alt="1" width=460 height=500></img>
+<br><i>Interactive scatterplot + regression tools to explore correlation and relationships.</i>
 
 ### Small interactive game
-Randomly generated hypothesis testing questions on product moment coorelation coefficient
 <div align="center">
 <img src="https://github.com/aqmeraamir/cupcake-bot/assets/59936217/8ae3e239-eda6-4860-b1a7-2f5dfc304eda" alt="1" width=460 height=500></img>
+<br><i>Randomly generated hypothesis testing questions on product moment coorelation coefficient</i>
 
 ## Setup (to run locally)
 
@@ -44,6 +45,7 @@ Randomly generated hypothesis testing questions on product moment coorelation co
 
 
   
+
 
 
 
