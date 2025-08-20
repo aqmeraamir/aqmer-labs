@@ -28,18 +28,8 @@ https://aqmer-labs.vercel.app
 <div align="center">
 <img src="https://github.com/aqmeraamir/cupcake-bot/assets/59936217/8ae3e239-eda6-4860-b1a7-2f5dfc304eda" alt="1" width=460 height=500></img>
 <br><i>Randomly generated hypothesis testing questions on product moment coorelation coefficient</i>
+<a href="#" style="display:inline-block; padding:6px 12px; border-radius:6px; border:1px solid #d1d5db; text-decoration:none; font-weight:600;">Live demo</a>
 </div>
-
----
-
-<div align="left">
-  <img src="https://github.com/aqmeraamir/cupcake-bot/assets/59936217/8ae3e239-eda6-4860-b1a7-2f5dfc304eda" alt="Collisions preview" width="400" style="border-radius:8px; margin-bottom:0.5rem;">
-  <br>
-  <em>Interactive, real-time 2D collisions — switch between elastic/inelastic collisions, enable gravity, show force vectors and trails.</em>
-  <br><br>
-  <a href="#" style="display:inline-block; padding:6px 12px; border-radius:6px; border:1px solid #d1d5db; text-decoration:none; font-weight:600;">Live demo</a>
-</div>
-
 
 
 ## Setup (to run locally)
@@ -63,6 +53,7 @@ https://aqmer-labs.vercel.app
 
 
   
+
 
 
 
