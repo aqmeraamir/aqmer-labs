@@ -10,7 +10,7 @@ https://aqmer-labs.vercel.app
 
 ### Collisions physics simulator
 <div align="center">
-<img src="https://github.com/aqmeraamir/aqmer-labs/blob/main/images/collisions_sped.gif" alt="1" width=890 height=600></img>
+<img src="https://github.com/aqmeraamir/aqmer-labs/blob/main/gifs/collisions_sped.gif" alt="1" width=890 height=600></img>
 <br><i>Interactive, real-time 2D collisions, elastic/inelastic demos, can enable gravity/vectors/trails</i>
 </br>
 <a href="https://aqmer-labs.vercel.app/collision-simulator">Demo</a>
@@ -20,7 +20,7 @@ https://aqmer-labs.vercel.app
 
 ### Correlation visualiser
 <div align="center">
-<img src="https://github.com/aqmeraamir/aqmer-labs/blob/main/images/coorelation_sim.gif" alt="1" width=890 height=700></img>
+<img src="https://github.com/aqmeraamir/aqmer-labs/blob/main/gifs/coorelation_sim.gif" alt="1" width=890 height=700></img>
 <br><i>Interactive scatterplot + regression tools to explore correlation and relationships.</i>
 </br>
 <a href="https://aqmer-labs.vercel.app/coorelation/simulator">Demo</a>
@@ -30,7 +30,7 @@ https://aqmer-labs.vercel.app
    
 ### Small interactive game
 <div align="center">
-<img src="https://github.com/aqmeraamir/aqmer-labs/blob/main/images/coorelation_game.gif" alt="1" width=890 height=700></img>
+<img src="https://github.com/aqmeraamir/aqmer-labs/blob/main/gifs/coorelation_game.gif" alt="1" width=890 height=700></img>
 <br><i>Randomly generated hypothesis testing questions on product moment coorelation coefficient</i>
 </br>
 <a href="https://aqmer-labs.vercel.app/coorelation/game">Demo</a>
