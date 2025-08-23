@@ -234,8 +234,8 @@ const GameChart = () => {
                           className={`border px-2 py-1 ${
                             highlightCell?.n === n && highlightCell?.col === colIdx
                               ? answered
-                                ? 'bg-blue-400 font-bold' // after answering → blue
-                                : 'bg-gray-200'           // before answering → gray
+                                ? 'bg-blue-400 font-bold' 
+                                : 'bg-gray-200'           
                               : ''
                           }`}
                       >
