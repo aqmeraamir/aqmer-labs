@@ -18,7 +18,7 @@ https://aqmer-labs.vercel.app
 
 ### Correlation visualiser
 <div align="center">
-<img src="https://github.com/aqmeraamir/cupcake-bot/assets/59936217/8ae3e239-eda6-4860-b1a7-2f5dfc304eda" alt="1" width=460 height=500></img>
+<img src="" alt="1" width=460 height=500></img>
 <br><i>Interactive scatterplot + regression tools to explore correlation and relationships.</i>
 </div>
 
@@ -26,7 +26,7 @@ https://aqmer-labs.vercel.app
    
 ### Small interactive game
 <div align="center">
-<img src="https://github.com/aqmeraamir/cupcake-bot/assets/59936217/8ae3e239-eda6-4860-b1a7-2f5dfc304eda" alt="1" width=460 height=500></img>
+<img src="" alt="1" width=460 height=500></img>
 <br><i>Randomly generated hypothesis testing questions on product moment coorelation coefficient</i>
 </br>
 <a href="#" style="display:inline-block; padding:6px 12px; border-radius:6px; border:1px solid #d1d5db; text-decoration:none; font-weight:600;">Live demo</a>
@@ -54,6 +54,7 @@ https://aqmer-labs.vercel.app
 
 
   
+
 
 
 
