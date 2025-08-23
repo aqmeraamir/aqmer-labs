@@ -166,7 +166,7 @@ const GameChart = () => {
       </button>
 
       {/* critical value table */}
-      <div className="mt-10 border rounded-lg p-4 h-72 overflow-y-auto">
+      <div className="mt-10 max-h-96 overflow-auto border rounded-lg p-4">
         <h3 className="text-md font-bold mb-2">PMCC Critical Value Table</h3>
         <table className="w-full table-auto border-collapse text-sm text-left">
           <thead className="bg-gray-100 sticky top-0 z-10">
