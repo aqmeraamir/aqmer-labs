@@ -10,7 +10,7 @@ https://aqmer-labs.vercel.app
 
 ### Collisions physics simulator
 <div align="center">
-<img src="https://github.com/aqmeraamir/aqmer-labs/blob/main/images/collisions_sped.gif" alt="1" width=860 height=600></img>
+<img src="https://github.com/aqmeraamir/aqmer-labs/blob/main/images/collisions_sped.gif" alt="1" width=900 height=600></img>
 <br><i>Interactive, real-time 2D collisions, elastic/inelastic demos, can enable gravity/vectors/trails</i>
 </div>
 
@@ -18,7 +18,7 @@ https://aqmer-labs.vercel.app
 
 ### Correlation visualiser
 <div align="center">
-<img src="https://github.com/aqmeraamir/aqmer-labs/blob/main/images/coorelation_sim.gif" alt="1" width=860 height=700></img>
+<img src="https://github.com/aqmeraamir/aqmer-labs/blob/main/images/coorelation_sim.gif" alt="1" width=900 height=700></img>
 <br><i>Interactive scatterplot + regression tools to explore correlation and relationships.</i>
 </div>
 
@@ -54,6 +54,7 @@ https://aqmer-labs.vercel.app
 
 
   
+
 
 
 
