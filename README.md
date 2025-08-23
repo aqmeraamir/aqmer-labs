@@ -18,7 +18,7 @@ https://aqmer-labs.vercel.app
 
 ### Correlation visualiser
 <div align="center">
-<img src="https://github.com/aqmeraamir/aqmer-labs/blob/main/images/coorelation_sim" alt="1" width=460 height=500></img>
+<img src="https://github.com/aqmeraamir/aqmer-labs/blob/main/images/coorelation_sim.gif" alt="1" width=460 height=500></img>
 <br><i>Interactive scatterplot + regression tools to explore correlation and relationships.</i>
 </div>
 
@@ -54,6 +54,7 @@ https://aqmer-labs.vercel.app
 
 
   
+
 
 
 
