@@ -86,7 +86,7 @@ const GameChart = () => {
 
     
     setAlphaIndex(alphaChoice.index);
-    setHighlightCell(null);
+    // setHighlightCell(null);
   };
 
   // initialise first test
