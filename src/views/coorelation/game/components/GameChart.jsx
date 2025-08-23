@@ -231,13 +231,13 @@ const GameChart = () => {
                     return (
                       <td
                         key={idx}
-                        className={`border px-2 py-1 ${
-                          isHighlightedCell
-                            ? 'bg-blue-400 font-bold'
-                            : isColHighlight
-                            ? 'bg-gray-200'
-                            : ''
-                        }`}
+                          className={`border px-2 py-1 ${
+                            highlightCell?.n === n && highlightCell?.col === colIdx
+                              ? answered
+                                ? 'bg-blue-400 font-bold' // after answering → blue
+                                : 'bg-gray-200'           // before answering → gray
+                              : ''
+                          }`}
                       >
                         {val.toFixed(4)}
                       </td>
