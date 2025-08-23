@@ -81,12 +81,12 @@ const GameChart = () => {
     setCrit(criticalTable[randomN][alphaChoice.index]);
     setH1(h1Choice);
     setAnswered(false);
-    setHighlightCell({ n: randomN, col: alphaChoice.index });
+    setWasCorrect(null)
 
-
-    
+    const colIndex = h1Choice === '≠ 0' ? 4 + alphaChoice.index : alphaChoice.index;
+    setHighlightCell({ n: randomN, col: colIndex });
     setAlphaIndex(alphaChoice.index);
-    // setHighlightCell(null);
+  
   };
 
   // initialise first test
@@ -110,8 +110,6 @@ const GameChart = () => {
     if (isCorrect) setCorrect((prev) => prev + 1);
     setAnswered(true);
 
-    const colIndex = (h1 === '≠ 0' ? 4 : 0) + alphaIndex;
-    setHighlightCell({ n: points.length, col: colIndex });
   };
 
   return (
@@ -188,56 +186,59 @@ const GameChart = () => {
               <th className="border px-2 py-1">1%</th>
             </tr>
           </thead>
-          <tbody>
-            {[
-              [3, 0.9877, 0.9969, 0.9995, 0.9999],
-              [4, 0.9000, 0.9500, 0.9800, 0.9900],
-              // ...
-              [30, 0.3061, 0.3610, 0.4226, 0.4629],
-            ].map(([n, a, b, c, d], i) => {
-              const rowHighlight = highlightCell?.n === n;
+        <tbody>
+          {Object.keys(criticalTable)
+            .map((k) => Number(k))
+            .sort((a, b) => a - b)
+            .map((n) => {
+              const [a, b, c, d] = criticalTable[n];
 
               return (
-                <tr key={i} className={rowHighlight ? 'bg-gray-200' : 'odd:bg-white even:bg-gray-50'}>
+                <tr key={n} className="odd:bg-white even:bg-gray-50">
                   <td className="border px-2 py-1 font-medium">{n}</td>
 
-                  {/* 1-tail columns */}
-                  {[a, b, c, d].map((val, colIdx) => {
-                    const isHighlightedCell = highlightCell?.n === n && highlightCell?.col === colIdx;
-                    const isColHighlight = highlightCell?.col === colIdx;
+                  {/* 1-tail columns (col indexes 0..3) */}
+                  {[a, b, c, d].map((val, idx) => {
+                    const actualColIdx = idx; // 0..3
+                    const isRow = highlightCell?.n === n;
+                    const isCol = highlightCell?.col === actualColIdx;
+                    const isCell = isRow && isCol;
+
+                    let extraClass = '';
+                    if (isCell) {
+                      extraClass = answered ? 'bg-blue-400 font-bold' : 'bg-gray-50';
+                    } else if (answered && (isRow || isCol)) {
+                      extraClass = 'bg-gray-200';
+                    }
 
                     return (
                       <td
-                        key={colIdx}
-                        className={`border px-2 py-1 ${
-                          isHighlightedCell
-                            ? 'bg-blue-400 font-bold'
-                            : isColHighlight
-                            ? 'bg-gray-200'
-                            : ''
-                        }`}
+                        key={`${n}-one-${actualColIdx}`}
+                        className={`border px-2 py-1 ${extraClass}`}
                       >
                         {val}
                       </td>
                     );
                   })}
 
-                  {/* 2-tail columns (derived from 1-tail) */}
+                  {/* 2-tail columns (derived from 1-tail): col indexes 4..7 */}
                   {[(a - 0.0123), (b - 0.0219), (c - 0.0193), (d - 0.0370)].map((val, idx) => {
-                    const colIdx = 4 + idx;
-                    const isHighlightedCell = highlightCell?.n === n && highlightCell?.col === colIdx;
-                    const isColHighlight = highlightCell?.col === colIdx;
+                    const actualColIdx = 4 + idx; // 4..7
+                    const isRow = highlightCell?.n === n;
+                    const isCol = highlightCell?.col === actualColIdx;
+                    const isCell = isRow && isCol;
+
+                    let extraClass = '';
+                    if (isCell) {
+                      extraClass = answered ? 'bg-blue-400 font-bold' : 'bg-gray-50';
+                    } else if (answered && (isRow || isCol)) {
+                      extraClass = 'bg-gray-200';
+                    }
 
                     return (
                       <td
-                        key={idx}
-                          className={`border px-2 py-1 ${
-                            highlightCell?.n === n && highlightCell?.col === colIdx
-                              ? answered
-                                ? 'bg-blue-400 font-bold' 
-                                : 'bg-gray-200'           
-                              : ''
-                          }`}
+                        key={`${n}-two-${actualColIdx}`}
+                        className={`border px-2 py-1 ${extraClass}`}
                       >
                         {val.toFixed(4)}
                       </td>
@@ -246,7 +247,7 @@ const GameChart = () => {
                 </tr>
               );
             })}
-          </tbody>
+        </tbody>
         </table>
       </div>
     </Card>
