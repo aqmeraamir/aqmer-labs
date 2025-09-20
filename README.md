@@ -1,7 +1,6 @@
 # Aqmer Labs - Interactive Physics & Stats Tools
 
-I built Aqmer-Labs as a collection of my interactive web simulators including a physics collisions simulator, a correlation visualiser, and a small game, on
-React-based site. Each tools was inspired by the topics I learnt in my A-Level lessons and I wanted to visualise them using code. The repo is deployed using Vercel and can be accessed, live, on:
+I built Aqmer-Labs using react as a collection of my interactive web simulators including a physics collisions simulator, a correlation visualiser, and a small game. Each tools was inspired by the topics I learnt in my A-Level lessons and I wanted to visualise them using code. The repo is deployed using Vercel and can be accessed, live, on:
 https://aqmer-labs.vercel.app
 
 ---
@@ -59,6 +58,7 @@ https://aqmer-labs.vercel.app
 
 
   
+
 
 
 
