@@ -65,7 +65,7 @@ const GameChart = () => {
   const [answered, setAnswered] = useState(false);  // lock button after answering
   const [wasCorrect, setWasCorrect] = useState(null);
   const [highlightCell, setHighlightCell] = useState(null);
-  const [alphaIndex, setAlphaIndex] = useState(0);
+  const alphaIndex = React.useRef(0);
 
   const resetGame = () => {
     const randomN = Math.floor(Math.random() * (30 - 3 + 1)) + 3;
@@ -85,7 +85,7 @@ const GameChart = () => {
 
     const colIndex = h1Choice === '≠ 0' ? 4 + alphaChoice.index : alphaChoice.index;
     setHighlightCell({ n: randomN, col: colIndex });
-    setAlphaIndex(alphaChoice.index);
+    alphaIndex.current = alphaChoice.index;
   
   };
 

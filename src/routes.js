@@ -2,10 +2,9 @@ import React from "react";
 
 // Page Imports
 import Home from "views/home";
-import Coorelation from "views/coorelation/simulator";
-import Game from "views/coorelation/game";
+import Correlation from "views/correlation/simulator";
+import Game from "views/correlation/game";
 import Collision from "views/collision";
-
 
 // import
 import {
@@ -38,21 +37,20 @@ const routes = [
     component: <Collision/>,
   }, 
 
-
   {
-  name: "Coorelation",
+  name: "Correlation",
   layout: "/",
-  path: "coorelation",
+  path: "correlation",
   icon: <VscGraphScatter className="h-6 w-6" />,
-  component: <Coorelation/>,
-  defaultChild: "coorelation/simulator",
+  component: <Correlation/>,
+  defaultChild: "Correlation/simulator",
 
   children: [
       {
         name: "Simulator",
         layout: "/",
         path: "simulator",
-        component: <Coorelation/>,
+        component: <Correlation/>,
       },
       {
         name: "Game",
@@ -62,9 +60,6 @@ const routes = [
       },
     ],
   }, 
-  
-  
-
  
 ];
 export default routes;

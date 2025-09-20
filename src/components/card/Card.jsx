@@ -10,9 +10,9 @@ const Card= ({ title, author, subtext, image, bidders, extra, link }) => {
     >
       <div className="h-full w-full">
         <div className="relative w-full">
-          <img
+         <img
             src={image}
-            className="mb-3 h-full w-full rounded-xl 3xl:h-full 3xl:w-full"
+            className="mb-3 w-full aspect-[568/320] object-cover rounded-xl"
             alt=""
           />
           <button

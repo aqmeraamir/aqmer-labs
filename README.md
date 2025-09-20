@@ -20,20 +20,20 @@ https://aqmer-labs.vercel.app
 
 ### Correlation visualiser
 <div align="center">
-<img src="https://github.com/aqmeraamir/aqmer-labs/blob/main/gifs/coorelation_sim.gif" alt="1" width=890 height=700></img>
+<img src="https://github.com/aqmeraamir/aqmer-labs/blob/main/gifs/correlation_sim.gif" alt="1" width=890 height=700></img>
 <br><i>Interactive scatterplot + regression tools to explore correlation and relationships.</i>
 </br>
-<a href="https://aqmer-labs.vercel.app/coorelation/simulator">Demo</a>
+<a href="https://aqmer-labs.vercel.app/correlation/simulator">Demo</a>
 </div>
 
 ---
    
 ### Small interactive game
 <div align="center">
-<img src="https://github.com/aqmeraamir/aqmer-labs/blob/main/gifs/coorelation_game.gif" alt="1" width=890 height=700></img>
-<br><i>Randomly generated hypothesis testing questions on product moment coorelation coefficient</i>
+<img src="https://github.com/aqmeraamir/aqmer-labs/blob/main/gifs/correlation_game.gif" alt="1" width=890 height=700></img>
+<br><i>Randomly generated hypothesis testing questions on product moment correlation coefficient</i>
 </br>
-<a href="https://aqmer-labs.vercel.app/coorelation/game">Demo</a>
+<a href="https://aqmer-labs.vercel.app/correlation/game">Demo</a>
 </div>
 
 
@@ -41,8 +41,8 @@ https://aqmer-labs.vercel.app
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/aqmeraamir/chess-bot.git
-   cd chess-bot
+   git clone https://github.com/aqmeraamir/aqmer-labs.git
+   cd aqmer-labs
    ```
 
 2. Install dependencies
@@ -55,32 +55,3 @@ https://aqmer-labs.vercel.app
     ```
     npm start 
     ```
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

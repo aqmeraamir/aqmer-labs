@@ -1,7 +1,7 @@
-import InteractiveScatterDiagram from "views/coorelation/simulator/components/InteractiveScatter";
+import InteractiveScatterDiagram from "views/correlation/simulator/components/InteractiveScatter";
 
 
-const Coorelation = () => {
+const Correlation = () => {
   return (
     <div>
       {/* chart */}
@@ -12,4 +12,4 @@ const Coorelation = () => {
   );
 };
 
-export default Coorelation;
+export default Correlation;

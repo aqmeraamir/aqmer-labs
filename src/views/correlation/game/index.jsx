@@ -1,4 +1,4 @@
-import GameChart from "views/coorelation/game/components/GameChart";
+import GameChart from "views/correlation/game/components/GameChart";
 
 const Game = () => {
   return (

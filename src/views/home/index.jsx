@@ -1,5 +1,6 @@
 import Banner from "./components/Banner";
-import Img1 from "assets/img/cards/coorelation.png";
+import Img1 from "assets/img/cards/collisions.png";
+import Img2 from "assets/img/cards/correlation.png";
 
 import Card from "components/card/Card";
 
@@ -21,12 +22,18 @@ const Home = () => {
         {/* Cards */}
         <div className="z-20 grid grid-cols-1 gap-5 md:grid-cols-3">
           <Card
-            title="Coorelation"
-            author="Distribution Simulator & Game"
+            title="Collisions"
+            author="Simulator"
             image={Img1}
-            link="/coorelation"
+            link="/collision-simulator"
           />
-       
+
+          <Card
+            title="Correlation"
+            author="Distribution Simulator & Game"
+            image={Img2}
+            link="/correlation"
+          />
         </div>
 
       </div>
